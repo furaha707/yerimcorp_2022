@@ -1,0 +1,47 @@
+<ul class="skip">
+	<li><a class="link" href="#contents">본문내용 바로가기</a></li>
+	<li><a class="link" href="#header">헤더 바로가기</a></li>
+	<li><a class="link" href="#footer">푸터 바로가기</a></li>
+</ul>
+
+<header id="header" class="header">
+	<div class="container header-wrap">
+		<a href="../main/main.html" class="logo d-inline-flex align-items-center h-100" title="메인으로">
+			<img src="../../assets/images/main/logo.png" alt="<?=$SS[sitename]?>" />
+		</a>
+		<div class="nav__bg"></div>
+		<!-- S : pc 네비게이션 -->
+		<div class="nav-pc">
+			<nav class="nav">
+				<? include "../include/nav.html" ?>
+			</nav>
+			<a href="javascript:void(0);" class="lang" onclick="javascript:alert('준비중입니다'); return false">
+				ENG
+			</a>
+			<button type="button" class="nav-pc__btn hamburger hamburger--spring" title="전체메뉴 보기">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</button>
+		</div>
+		<!-- E : pc 네비게이션 -->
+		<button class="nav-mobile__btn" type="button">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="20px">
+				<path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+					d="M-0.000,20.000 L-0.000,18.000 L29.000,18.000 L29.000,20.000 L-0.000,20.000 ZM-0.000,9.000 L29.000,9.000 L29.000,11.000 L-0.000,11.000 L-0.000,9.000 ZM-0.000,-0.000 L29.000,-0.000 L29.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
+			</svg>
+		</button>
+	</div>
+</header>
+
+<!-- S : mobile navigation -->
+<? include "../include/aside.html" ?>
+<!-- E : mobile navigation -->
+
+
+
+<!-- S : loading image -->
+<div class="loading-image">
+	<img src="../../assets/images/icon/loading.svg" alt="loading" />
+</div>
+<!-- E : loading image -->

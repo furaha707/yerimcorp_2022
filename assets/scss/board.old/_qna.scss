@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+///*QNA*/
+.qna {
+	border-top: 2px solid #000;
+	background: #fff;
+	text-align: left;
+
+	&.type_b {
+		// 버튼 변경
+		.qna-header a {
+			background: none !important;
+		}
+
+		.qna-header {
+			a {
+				position: relative;
+
+				&.select {
+					&:before {
+						-webkit-transform: rotate(0);
+						transform: rotate(0);
+					}
+				}
+
+				&:before,
+				&:after {
+					background-color: rgba(#000, 0.8);
+					width: 14px;
+					height: 2px;
+					position: absolute;
+					right: 22px;
+					top: 50%;
+					margin-top: -1px;
+					content: '';
+					-webkit-transition: all 0.5s;
+					transition: all 0.5s;
+
+					@include mdq-max(lg) {
+						right: 12px;
+					}
+				}
+
+				&:before {
+					-webkit-transform: rotate(270deg);
+					transform: rotate(270deg);
+				}
+
+				&:after {
+					-webkit-transform: rotate(180deg);
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	.qna-header {
+		padding: 20px 15px;
+		position: relative;
+		border-bottom: solid 1px #ddd;
+
+		&.select {
+			color: $mc;
+
+			a {
+				color: $mc;
+				background: url(../images/icon/qna-down.png) no-repeat 98% center;
+				font-size: em(18);
+				@include mdq-max(lg) {
+					font-size: 13px;
+					background: url(../images/icon/qna-down.png) no-repeat 100% center;
+				}
+			}
+
+			&:before {
+				color: $mc;
+			}
+		}
+
+		&:before {
+			content: 'Q.';
+			position: absolute;
+			top: 50%;
+			left: 35px;
+			font-size: 18px;
+			font-family: $font-family-opensans;
+			margin-top: -15px;
+			font-weight: 500;
+			@include mdq-max(lg) {
+				left: 15px;
+			}
+		}
+
+		a {
+			display: block;
+			padding-left: 60px;
+			padding-right: 30px;
+			text-decoration: none;
+			font-size: em(18);
+			font-weight: 400;
+			color: #111;
+			background: url(../images/icon/qna-up.png) no-repeat 98% center;
+
+			@include mdq-max(lg) {
+				font-size: 13px;
+				padding-left: 30px;
+				padding-right: 30px;
+				background: url(../images/icon/qna-up.png) no-repeat 100% center;
+			}
+
+			&:hover {
+				color: $mc;
+			}
+		}
+	}
+
+	.qna-body {
+		display: none;
+		padding: 40px 40px 40px 75px;
+		line-height: 1.5;
+		color: #666;
+		border-bottom: solid 1px #ddd;
+		position: relative;
+		font-size: em(16);
+		word-break: break-all;
+
+		@include mdq-max(lg) {
+			font-size: 14px;
+			padding: 20px 20px 20px 45px;
+		}
+
+		&:before {
+			content: 'A.';
+			position: absolute;
+			top: 40px;
+			left: 35px;
+			font-size: 18px;
+			font-family: $font-family-opensans;
+			font-weight: 500;
+			color: $mc;
+			@include mdq-max(lg) {
+				top: 20px;
+				left: 15px;
+			}
+		}
+	}
+
+	&_tab {
+		margin-bottom: 30px;
+
+		ul {
+			text-align: center;
+
+			li {
+				float: left;
+
+				a {
+					display: block;
+					position: relative;
+					height: 45px;
+					line-height: 45px;
+					text-align: center;
+					font-size: 16px;
+					color: #666;
+					border: 1px solid #ddd;
+					background: #fff;
+					margin-left: -1px;
+					margin-top: -1px;
+
+					&.on,
+					&:hover {
+						color: #fff;
+						border-color: $mc;
+						background: $mc;
+					}
+				}
+			}
+		}
+
+		@include mdq-max(lg) {
+			margin-bottom: 20px;
+
+			ul {
+				li {
+					a {
+						height: 35px;
+						font-size: 13px;
+						line-height: 35px;
+						letter-spacing: -0.8px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* Made by Masstige */
+.process-bx {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.process-bx::after {
+  content: "";
+  display: block;
+  padding-bottom: 36.5%;
+}
+.process-bx > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  max-height: none;
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+}
+@media all and (max-width: 1024px) {
+  .process-bx {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .process-bx::after {
+    content: "";
+    display: block;
+    padding-bottom: 56.6666666667%;
+  }
+  .process-bx > img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 1000%;
+    min-height: 1000%;
+    max-width: none;
+    max-height: none;
+    -webkit-transform: translate(-50%, -50%) scale(0.1);
+            transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+
+.talent-wrap .talent-box {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  height: 18rem;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.talent-wrap .talent-box .ico {
+  text-align: center;
+}
+.talent-wrap .talent-box .ico img {
+  height: 34px;
+}
+.talent-wrap .talent-box .tit {
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #000;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.talent-wrap .talent-box .txt {
+  font-size: 1.125em;
+  font-weight: regular;
+  letter-spacing: -0.03em;
+  color: #666;
+  text-align: center;
+  margin-top: 0.8em;
+  height: 4rem;
+}
+@media all and (max-width: 1200px) {
+  .talent-wrap .talent-box .txt {
+    height: auto;
+  }
+}
+@media all and (max-width: 375px) {
+  .talent-wrap .talent-box .txt {
+    height: auto;
+  }
+}
+
+.process-wrap {
+  gap: 1.5rem;
+  /*向右*/
+}
+.process-wrap .process-box {
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 49%;
+          flex: 1 1 49%;
+  max-width: 49%;
+  position: relative;
+}
+.process-wrap .process-box:hover {
+  border-color: #004294;
+}
+@media all and (max-width: 1200px) {
+  .process-wrap .process-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.process-wrap .process-box:nth-child(odd) .arrow-before,
+.process-wrap .process-box:nth-child(odd) .arrow-after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px dashed transparent;
+  font-size: 0;
+}
+.process-wrap .process-box:nth-child(odd) .arrow-after {
+  border: 14px dashed transparent;
+}
+.process-wrap .process-box .step {
+  font-size: 1.25em;
+  letter-spacing: -0.02em;
+  color: #0884ce;
+  font-weight: 800;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 1rem;
+}
+.process-wrap .process-box .ico img {
+  height: 35px;
+}
+.process-wrap .process-box .tit {
+  font-size: 1.25em;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.process-wrap .process-box .txt {
+  font-size: 1em;
+  letter-spacing: -0.02em;
+  font-weight: regular;
+  color: #666;
+  margin-top: 0.5rem;
+}
+.process-wrap .bubble-right:nth-child(odd) .arrow-before,
+.process-wrap .bubble-right:nth-child(odd) .arrow-after {
+  left: 100%;
+  top: 50%;
+}
+.process-wrap .bubble-right:nth-child(odd) .arrow-before {
+  border-left-style: solid;
+  border-left-color: #c4c4c4;
+  margin-top: -15px;
+}
+.process-wrap .bubble-right:nth-child(odd) .arrow-after {
+  border-left-style: solid;
+  border-left-color: white;
+  margin-top: -14px;
+}
+.process-wrap .bubble-right:hover .arrow-before {
+  border-left-color: #004294;
+}
+/*# sourceMappingURL=recruit.css.map */

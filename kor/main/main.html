@@ -1,0 +1,406 @@
+<? include "../include/head.html" ?>
+<!DOCTYPE html>
+<html lang="<?=$P_lang?>">
+	<head>
+		<?
+    $P_dp0 = 'main';
+    include "../include/meta.html" 
+    ?>
+		<link rel="stylesheet" href="../../assets/css/main.min.css" />
+	</head>
+
+	<body class="main-body">
+		<? include "../include/header.html" ?>
+		<main class="main" id="contents">
+			<!-- S : main-visual -->
+			<section class="main-visual">
+				<h1 class="sr-only">메인비주얼 영역</h1>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- 
+              pc: 1920x940
+              m: 1440x1540 
+            -->
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="../../assets/images/main/main-visual1.jpg" alt="메인비주얼" />
+									<img class="d-block d-md-none" src="../../assets/images/main/m-main-visual1.jpg" alt="모바일비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<h2 class="title">예림임업</h2>
+										<p class="text">내가 꿈꾸던 공간<br />설레임의 시작</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="../../assets/images/main/main-visual1.jpg" alt="메인비주얼" />
+									<img class="d-block d-md-none" src="../../assets/images/main/m-main-visual1.jpg" alt="모바일비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<h2 class="title">예림임업</h2>
+										<p class="text">내가 꿈꾸던 공간<br />설레임의 시작</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="../../assets/images/main/main-visual1.jpg" alt="메인비주얼" />
+									<img class="d-block d-md-none" src="../../assets/images/main/m-main-visual1.jpg" alt="모바일비주얼" />
+								</div>
+								<div class="txt-bx">
+									<div class="container">
+										<h2 class="title">예림임업</h2>
+										<p class="text">내가 꿈꾸던 공간<br />설레임의 시작</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-control swiper-control--progress-no">
+						<div class="container">
+							<!-- S : Swiper Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- E : Swiper Pagination -->
+
+							<!-- S : scroll-down -->
+							<div class="scroll-down d-flex flex-column align-items-center">
+								<p class="scroll-down--txt">SCROLL DOWN</p>
+								<p class="mousey">
+									<span class="scroller"></span>
+								</p>
+							</div>
+							<!-- E : scroll-down -->
+
+							<!-- S : count-wrap -->
+							<div class="count-wrap">
+								<button type="button" class="swiper-button swiper-button--prev" tabindex="0" role="button" aria-label="Previous slide">
+									<i class="xi-angle-left-thin"></i>
+								</button>
+								<div class="main-visual__pagination swiper-pagination__fraction">
+									<span class="swiper-pagination-current">2</span>
+									<span class="mx-0 mx-sm-1">/</span>
+									<span class="swiper-pagination-total">2</span>
+								</div>
+								<button type="button" class="swiper-button swiper-button--next" tabindex="0" role="button" aria-label="Next slide">
+									<i class="xi-angle-right-thin"></i>
+								</button>
+							</div>
+							<!-- E : count-wrap -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : main-visual -->
+
+			<!-- S : section1 -->
+			<section class="section section1 my-15 my-xl-30">
+				<div class="container">
+					<div class="txt-bx">
+						<p class="year">SINCE 1979</p>
+						<div class="letters mt-2 mt-lg-4">
+							<h6 class="tit" data-aos="fade-down" data-aos-duration="1000">Where the house begins</h6>
+							<p class="txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">일상을 아름답게 바꾸는<br />인테리어 예림이 행복을 디자인합니다.</p>
+						</div>
+					</div>
+					<div class="img-bx mt-15 mt-xl-5" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+						<img class="d-none d-lg-block" src="../../assets/images/main/design.jpg" alt="디자인 배너" />
+						<img class="d-block d-lg-none" src="../../assets/images/main/design-m.jpg" alt="디자인 배너" />
+					</div>
+				</div>
+			</section>
+			<!-- E : section1 -->
+
+			<!-- S : section -->
+			<section class="section my-15 my-xl-30">
+				<div class="text-center mb-10 d-block d-md-none">
+					<div class="container">
+						<h2 class="main-tit" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">사업영역</h2>
+					</div>
+				</div>
+				<div class="yerim-house-wrap overflow-hidden">
+					<div class="main-section-title text-center">
+						<div class="container">
+							<h2 class="tit" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">사업영역</h2>
+							<h2 class="detail">도어의 차이, 예림이 만듭니다.</h2>
+						</div>
+					</div>
+					<img id="house-bg-1" class="yerim-house-bg" src="../../assets/images/main/slide1.jpg" alt="Yerim in house 첫번째 배경" />
+					<img id="house-bg-2" class="yerim-house-bg" src="../../assets/images/main/slide2.png" alt="Yerim in house 첫번째 배경" />
+					<img id="house-bg-3" class="yerim-house-bg" src="../../assets/images/main/slide3.png" alt="Yerim in house 첫번째 배경" />
+					<a href="../business/door.html" class="box" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500" data-bg="house-bg-1">
+						<span class="box__tit">
+							예림도어
+							<!-- <img class="gray-logo" src="../../assets/images/icon/yl-door.png" alt="예림도어" />
+							<img class="white-logo" src="../../assets/images/icon/yl-door-w.png" alt="예림도어" /> -->
+						</span>
+						<div class="open">
+							<img class="gray" src="../../assets/images/icon/arrow-left.png" alt="오픈왼쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-left-w.png" alt="오픈왼쪽화살표 white" />
+							<p>open</p>
+							<img class="gray" src="../../assets/images/icon/arrow-right.png" alt="오픈오른쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-right-w.png" alt="오픈오른쪽화살표 white" />
+						</div>
+						<p class="box__detail">공간의 포인트가 되는 <br class="d-block d-lg-none" />디테일이 다른 도어</p>
+					</a>
+					<a href="../business/kitchen.html" class="box" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1500" data-bg="house-bg-2">
+						<span class="box__tit">
+							예림키친
+							<!-- <img class="gray-logo" src="../../assets/images/icon/yl-kitchen.png" alt="예림키친" />
+							<img class="white-logo" src="../../assets/images/icon/yl-kitchen-w.png" alt="예림키친" /> -->
+						</span>
+						<div class="open">
+							<img class="gray" src="../../assets/images/icon/arrow-left.png" alt="오픈왼쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-left-w.png" alt="오픈왼쪽화살표 white" />
+							<p>open</p>
+							<img class="gray" src="../../assets/images/icon/arrow-right.png" alt="오픈오른쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-right-w.png" alt="오픈오른쪽화살표 white" />
+						</div>
+						<p class="box__detail">친환경 무납원료 <br class="d-block d-lg-none" />자연을 닮은 건강한 창</p>
+					</a>
+					<a href="../business/window.html" class="box" data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1500" data-bg="house-bg-3">
+						<span class="box__tit">
+							예림샤시
+							<!-- <img class="gray-logo" src="../../assets/images/icon/yl-sash.png" alt="예림샤시" />
+							<img class="white-logo" src="../../assets/images/icon/yl-sash-w.png" alt="예림샤시" /> -->
+						</span>
+						<div class="open">
+							<img class="gray" src="../../assets/images/icon/arrow-left.png" alt="오픈왼쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-left-w.png" alt="오픈왼쪽화살표 white" />
+							<p>open</p>
+							<img class="gray" src="../../assets/images/icon/arrow-right.png" alt="오픈오른쪽화살표" />
+							<img class="white" src="../../assets/images/icon/arrow-right-w.png" alt="오픈오른쪽화살표 white" />
+						</div>
+						<p class="box__detail">
+							친환경 자재와 트렌디한 컬러감의<br class="d-none d-lg-block" />
+							매력적인 프리미엄 주방
+						</p>
+					</a>
+				</div>
+			</section>
+			<!-- E : section -->
+
+			<!-- S : section3 -->
+			<section class="section section3 my-15 my-xl-30">
+				<div class="container">
+					<h6 class="main-tit mb-10" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">YERIM STORY</h6>
+					<div class="swiper-container" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+						<div class="swiper-wrapper">
+							<!-- 
+              pc: 1600x500
+              m: 1280x1035 
+            -->
+							<div class="swiper-slide item">
+								<a href="../pop/youtube.html" class="link popup-link">
+									<div class="img-bx">
+										<!-- 
+                    TODO
+                    pc : 1600*500
+                    m : 1280*1036
+                   -->
+										<img class="d-none d-md-block" src="../../assets/images/main/sub2.jpg" alt="제품이미지" />
+										<img class="d-block d-md-none" src="../../assets/images/main/sub2-m.jpg" alt="제품이미지" />
+									</div>
+									<div class="ico-bx">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="18px">
+											<defs>
+												<filter id="Filter_0">
+													<feFlood flood-color="rgb(51, 51, 51)" flood-opacity="1" result="floodOut" />
+													<feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+													<feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+												</filter>
+											</defs>
+											<g filter="url(#Filter_0)">
+												<path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M25.546,2.910 C25.228,1.540 24.097,0.529 22.736,0.378 C19.513,0.021 16.249,0.020 13.002,0.021 C9.754,0.020 6.490,0.021 3.266,0.378 C1.906,0.529 0.776,1.540 0.458,2.910 C0.005,4.862 -0.000,6.993 -0.000,9.002 C-0.000,11.012 -0.000,13.143 0.453,15.094 C0.770,16.464 1.901,17.475 3.262,17.626 C6.485,17.983 9.749,17.985 12.997,17.983 C16.245,17.985 19.508,17.983 22.731,17.626 C24.091,17.475 25.222,16.464 25.541,15.094 C25.994,13.143 25.995,11.012 25.995,9.002 C25.995,6.993 25.999,4.862 25.546,2.910 ZM9.643,13.002 C9.643,10.152 9.643,7.330 9.643,4.480 C12.398,5.905 15.135,7.320 17.907,8.754 C15.143,10.175 12.405,11.582 9.643,13.002 Z" />
+											</g>
+										</svg>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide item">
+								<a href="#" class="link" target="_blank">
+									<div class="img-bx">
+										<img class="d-none d-md-block" src="../../assets/images/main/sub2.jpg" alt="제품이미지" />
+										<img class="d-block d-md-none" src="../../assets/images/main/sub2-m.jpg" alt="제품이미지" />
+									</div>
+								</a>
+							</div>
+						</div>
+						<button class="swiper-button swiper-button-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="13.5px">
+								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M38.600,11.111 L2.441,11.111 L12.083,1.419 " />
+							</svg>
+						</button>
+						<button class="swiper-button swiper-button-next">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="13.5px">
+								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.400,11.476 L37.559,11.476 L27.916,1.784 " />
+							</svg>
+						</button>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- E : section3 -->
+
+			<script>
+				var visualSwiper = new Swiper('.main-visual .swiper-container', {
+					effect: 'fade',
+					fadeEffect: {
+						crossFade: true,
+					},
+					pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets',
+						clickable: true,
+					},
+				});
+			</script>
+
+			<!-- S : section4 -->
+			<section class="section section4 mt-10 mt-xl-20 mb-20 mb-xl-40">
+				<div class="container">
+					<div data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
+						<p class="main-des">RECRUIT</p>
+						<h6 class="main-tit mb-5 mb-lg-0">인재채용</h6>
+					</div>
+					<div class="people mt-n20 mb-n4">YERIM PEOPLE</div>
+					<div class="recruit-wrap d-flex justify-content-center" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+						<a href="../recruit/recruit.html" class="recruit-item">
+							<p class="txt">인재상</p>
+							<p class="img"><img src="../../assets/images/main/recruit1.png" alt="아이콘" /></p>
+						</a>
+						<a href="../recruit/process.html" class="recruit-item">
+							<p class="txt">채용프로세스</p>
+							<p class="img"><img src="../../assets/images/main/recruit2.png" alt="아이콘" /></p>
+						</a>
+						<a href="../recruit/faq.html" class="recruit-item">
+							<p class="txt">FAQ</p>
+							<p class="img"><img src="../../assets/images/main/recruit3.png" alt="아이콘" /></p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- E : section4 -->
+		</main>
+
+		<? include "../include/footer.html" ?>
+		<? include "../include/js.html" ?>
+		<script src="../../assets/js/lib/gsap.js"></script>
+		<script src="../../assets/js/lib/ScrollTrigger.js"></script>
+		<script>
+			$(document).ready(function () {
+				gsap.registerPlugin(ScrollTrigger);
+				gsap.to('.year', {
+					scrollTrigger: '.year',
+					x: 1000,
+					duration: 1.1,
+					opacity: 1,
+					// ease: 'easeInOutQuart',
+				});
+				gsap.to('.people', {
+					scrollTrigger: '.people',
+					x: 1000,
+					duration: 1.1,
+					opacity: 1,
+					// ease: 'easeInOutQuart',
+				});
+			});
+
+			var visualSwiper = new Swiper('.main-visual .swiper-container', {
+				loop: true,
+				effect: 'fade',
+				autoHeight: true,
+				fadeEffect: {
+					crossFade: true,
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.main-visual .swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+					},
+				},
+				navigation: {
+					nextEl: '.main-visual .swiper-button--next',
+					prevEl: '.main-visual .swiper-button--prev',
+				},
+			});
+
+			var imgSwiper = new Swiper('.section3 .swiper-container', {
+				loop: true,
+				speed: 1000,
+				effect: 'fade',
+				autoHeight: true,
+				fadeEffect: {
+					crossFade: true,
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.section3 .swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.section3 .swiper-button-next',
+					prevEl: '.section3 .swiper-button-prev',
+				},
+			});
+
+			// Yerim in house 마우스 호버
+			$(document).ready(function () {
+				if ($(window).innerWidth() > 768) {
+					$('.yerim-house-wrap .box').hover(function () {
+						var bg_data = $(this).attr('data-bg');
+
+						$('.yerim-house-wrap .box').removeClass('on');
+						$('.yerim-house-wrap .box').addClass('active');
+						$('.yerim-house-bg').removeClass('on');
+
+						$(this).addClass('on');
+						$('#' + bg_data).addClass('on');
+					});
+
+					$('.yerim-house-wrap .box').mouseleave(function () {
+						$('.yerim-house-bg').removeClass('on');
+						$('.yerim-house-wrap .box').removeClass('on');
+						$('.yerim-house-wrap .box').removeClass('active');
+					});
+
+					$('.yerim-house-wrap').hover(function () {
+						$('.yerim-house-wrap .box .open').addClass('white');
+					});
+					$('.yerim-house-wrap').mouseleave(function () {
+						$('.yerim-house-wrap .box .open').removeClass('white');
+					});
+				}
+			});
+
+			var mainSlide = $('.main-visual .swiper-slide').not('.swiper-slide-duplicate').length;
+
+			$('.swiper-pagination__fraction .swiper-pagination-total').text(mainSlide);
+
+			$('.swiper-pagination__fraction .swiper-pagination-current').text('1');
+
+			visualSwiper.on('slideChange', function () {
+				var activeSlide = visualSwiper.realIndex + 1;
+
+				$('.swiper-pagination__fraction .swiper-pagination-current').text(activeSlide);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import 'functions';
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+.process-bx {
+	@include img-to-bg(percentage(511/1400));
+	@include mdq-max(lg) {
+		@include img-to-bg(percentage(816/1440));
+	}
+}
+
+.talent-wrap {
+	.talent-box {
+		border: 1px solid #ddd;
+		padding: 0.5rem;
+		height: 18rem;
+		margin-right: -1px;
+		margin-bottom: -1px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		.ico {
+			text-align: center;
+			img {
+				height: 34px;
+			}
+		}
+		.tit {
+			font-size: em(20);
+			font-weight: 500;
+			letter-spacing: letterSpacing(-30);
+			color: #000;
+			text-align: center;
+			margin-top: 0.5em;
+		}
+		.txt {
+			font-size: em(18);
+			font-weight: regular;
+			letter-spacing: letterSpacing(-30);
+			color: #666;
+			text-align: center;
+			margin-top: 0.8em;
+			height: 4rem;
+			@include mdq-max(xl) {
+				height: auto;
+			}
+			@include mdq-max(xs) {
+				height: auto;
+			}
+		}
+	}
+}
+
+.process-wrap {
+	gap: 1.5rem;
+	.process-box {
+		border: 1px solid #ddd;
+		color: #333;
+		padding: 3rem;
+		flex: 1 1 49%;
+		max-width: 49%;
+		position: relative;
+
+		&:hover {
+			border-color: $color-1;
+		}
+
+		@include mdq-max(xl) {
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+
+		&:nth-child(odd) {
+			.arrow-before,
+			.arrow-after {
+				position: absolute;
+				width: 0;
+				height: 0;
+				border: 15px dashed transparent;
+				font-size: 0;
+			}
+			.arrow-after {
+				border: 14px dashed transparent;
+			}
+		}
+
+		.step {
+			font-size: em(20);
+			letter-spacing: letterSpacing(-20);
+			color: #0884ce;
+			font-weight: 800;
+			font-family: $font-family-opensans;
+			margin-bottom: 1rem;
+		}
+		.ico {
+			img {
+				height: 35px;
+			}
+		}
+		.tit {
+			font-size: em(20);
+			letter-spacing: letterSpacing(-20);
+			font-weight: bold;
+			margin-top: 0.5rem;
+		}
+		.txt {
+			font-size: em(16);
+			letter-spacing: letterSpacing(-20);
+			font-weight: regular;
+			color: #666;
+			margin-top: 0.5rem;
+		}
+	}
+	/*向右*/
+
+	.bubble-right {
+		&:nth-child(odd) {
+			.arrow-before,
+			.arrow-after {
+				left: 100%;
+				top: 50%;
+			}
+			.arrow-before {
+				border-left-style: solid;
+				border-left-color: #c4c4c4;
+				margin-top: -15px;
+			}
+			.arrow-after {
+				border-left-style: solid;
+				border-left-color: white;
+				margin-top: -14px;
+			}
+		}
+		&:hover {
+			.arrow-before {
+				border-left-color: $color-1;
+			}
+		}
+	}
+}
